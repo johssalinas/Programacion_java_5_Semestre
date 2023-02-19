@@ -1,0 +1,20 @@
+form{
+	height: auto;
+	width: 400px;
+	margin: 5% auto;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+input{
+    padding: 15px;
+    border-radius: 5px;
+    margin: 7px;
+}
+
+button{
+    padding: 10px;
+    background-color: lightcoral;
+    border-radius: 5px;
+    font-size: 20px;
+}
