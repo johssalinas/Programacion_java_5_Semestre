@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro  - Mi web</title>
+</head>
+<body>
+    <header>
+        <h2>Formulario de registro</h2>
+    </header>
+    <main>
+        <form action="" method="post">
+            <input placeholder="Nombre" name="nombre" type="text" maxlength="50"></input><br>
+            <input placeholder="Apellidos" name="apellidos" type="text" maxlength="50"></input><br>
+            Sexo: <input type="checkbox" name="hombre">Hombre</input>
+                  <input type="checkbox" name="mujer">Mujer</input><br>
+            <input placeholder="Correo electronico" name="correo" type="email"/><br>
+            Poblacion: <select name="ciudad">
+                <option value="bucaramanga">Bucaramanga</option>
+                <option value="giron">Giron</option>
+                <option value="piedecuesta">Piedecuesta</option>
+                <option value="florida">Florida</option>
+            </select><br>
+            Description: <textarea name="description"></textarea><br>
+            <input type="checkbox" name="notificaciones" checked>Desea recibir informacion sobre novedades y ofertas</input><br>
+            <input type="checkbox" name="tyc">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</input><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer class="btn-volver">
+        <a href="../1_corte.html">Volver</a>
+    </footer>
+</body>
+</html>
