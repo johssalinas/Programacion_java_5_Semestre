@@ -30,19 +30,18 @@ try  {
 	 String consultaSQL=  "select nombre, apellidos, sexo, correo, poblacion, descripcion, notificaciones from usuario ";
 
 	 rs=sentencia.executeQuery(consultaSQL);
-	 
 	 while(rs.next()) { %>
-	 
-        <%=rs.getString("nombre")%>
-        <%=rs.getString("apellidos")%>
-		<%=rs.getString("sexo")%>
-        <%=rs.getString("correo")%>
-        <%=rs.getString("poblacion")%>
-        <%=rs.getString("descripcion")%>
-        <%=rs.getString("notificaciones")%>
-			<br/>
-	 
-	 
+        <fieldset>
+            <p><b>Nombre:</b> <%=rs.getString("nombre")%></p>
+            <p><b>Apellidos:</b> <%=rs.getString("apellidos")%></p>
+            <p><b>Sexo:</b> <%=rs.getString("sexo")%></p>
+            <p><b>Correo:</b> <%=rs.getString("correo")%></p>
+            <p><b>Poblacion:</b> <%=rs.getString("poblacion")%></p>
+            <p><b>Descripcion:</b> <%=rs.getString("descripcion")%></p>
+            <p><b>Notificaciones:</b> <%=rs.getString("notificaciones")%></p>
+        </fieldset>
+        <br>
+        <br>	 
 	<% }
 
 }catch (ClassNotFoundException e) {
