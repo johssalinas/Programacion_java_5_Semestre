@@ -48,6 +48,9 @@
             filas = sentencia.executeUpdate(consultaSQL);
 
             //resopnse.sendRedirect("mostrar.jsp");
+            String parametrosJspOrigen = request.getQueryString();
+            String urlDestino = "mostrar.jsp?"+parametrosJspOrigen;
+            response.sendRedirect(urlDestino);
         } catch (ClassNotFoundException e) {
             out.println("Error en la carga del driver: " + e.getMessage());
         }
